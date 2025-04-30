@@ -1,127 +1,144 @@
-//Bienvenida a Javascript básico, para comentar una linea de código puedes usar las dos barras // y para comentar un bloque de varias líneas puedes usar barra y asterisco para abrir /*  asterisco y barra para cerrar */
+//Bienvenida a Javascript básico, para comentar una linea de código puedes usar las dos barras // y para 
+// comentar un bloque de varias líneas puedes usar barra y asterisco para abrir /*  asterisco y barra 
+// para cerrar */
 
-//En el archivo index.html que tienes abierto en el navegador (preferiblemente chrome o firefox) vamos a trabajar con la consola, abre tu inspector y en la pestaña de consola, mira si puedes ver el mensaje escrito abajo.
+//En el archivo index.html que tienes abierto en el navegador (preferiblemente chrome o 
+// firefox) vamos a trabajar con la consola, abre tu inspector y en la pestaña de consola, 
+// mira si puedes ver el mensaje escrito abajo.
 
 console.log('Hola soy tu consola y juntas vamos a aprender Javascript')
 
 //Si has encontrado el mensaje puedes continuar con los ejercicios
 
-//Ejercicio 1: Imprime en la consola "Bienvenida/o al bootcamp Femcoders de Factoría F5" y mira en tu navegador si sale el resultado.
+//Ejercicio 1: Imprime en la consola "Bienvenida/o al bootcamp Femcoders de Factoría F5" y 
+// mira en tu navegador si sale el resultado.
 
-//Escribe tu código aquí
-
-
-
+console.log('Bienvenida al bootcamp Femcoders de Factoría F5')
 
 //VARIABLES Y TIPOS DE DATOS
-//Ejercicio 2: Crea una variable por los siguientes tipos de dato: string, number, boolean, null, undefined, object, array e imprímelos en la consola.
+//Ejercicio 2: Crea una variable por los siguientes tipos de dato: string, number, boolean, null, 
+// undefined, object, array e imprímelos en la consola.
 
-//Escribe tu código aquí
+let time = "Today is cloudy"; //Data Type: String
+console.log(time);
+let age = '38'; //Data Type: Number
+console.log(age);
+let isAdult = true; //Data Type: Boolean
+console.log(isAdult);
+let person = null; //Data Type: Null
+console.log(person);
+let noValue; //Data Type: Undefined
+console.log(noValue);
+let myObject = { type: "Car", color: "Blue" }; //Data Type: Object
+console.log(myObject);
+let fruits = ["apple", "banana", "grape"]; //Data Type: Array
+console.log(fruits);
 
 
+//Ejercicio 3: Crea una constante llamada postres con un tipo de dato array que contiene los 
+// siguientes elementos: helado, tarta, pastel e imprímelo en la consola. 
 
+const postres = ["helado", "tarta", "pastel"];
+console.log(postres); 
 
-//Ejercicio 3: Crea una constante llamada postres con un tipo de dato array que contiene los siguientes elementos: helado, tarta, pastel e imprímelo en la consola. 
+//Ejercicio 4: Crea una constante con un tipo de dato objeto llamado coder que contengan dos 
+// propiedades, nombre y edad e imprímelo en la consola.
 
-//Escribe tu código aquí
-
-
-
-
-//Ejercicio 4: Crea una constante con un tipo de dato objeto llamado coder que contengan dos propiedades, nombre y edad e imprímelo en la consola.
-
-//Escribe tu código aquí
-
-
-
+const coder = {
+    nombre: "May",
+    edad: 38
+  };
 
 //Ejercicio 5: Busca como imprimir en consola el tipo de dato de cada variable que hemos creado.
 
-//Escribe tu código aquí
-
-
-
+console.log(coder.nombre, coder.edad);
 
 //OPERADORES ARITMÉTICOS
 //Ejercicio 6: Crea una varible que sume 2 números e imprime el resultado en consola.
 
-//Escribe tu código aquí
-
-
-
+let suma = 5 + 3;
+console.log(suma);
 
 //Ejercicio 7: Crea una varible que reste 2 números e imprime el resultado en consola.
 
-//Escribe tu código aquí
-
-
-
+let resta = 10 - 4;
+console.log(resta);
 
 //Ejercicio 8: Crea una varible que multiplique 2 números e imprime el resultado en consola.
 
-//Escribe tu código aquí
-
-
-
+let multiplicacion = 6 * 2;
+console.log(multiplicacion); 
 
 //Ejercicio 9: Crea una varible que divida 2 números e imprime el resultado en consola.
 
-//Escribe tu código aquí
-
-
-
+let division = 20 / 4;
+console.log(division);
 
 //OPERADORES DE COMPARACIÓN
-// Ejercicio 10: Crea dos variables, la primera con valor 1 y la segunda con valor 2, compara ambas variables dentro de otra variable e imprime en la consola para ver el resultado.
+// Ejercicio 10: Crea dos variables, la primera con valor 1 y la segunda con valor 2, 
+// compara ambas variables dentro de otra variable e imprime en la consola para ver el resultado.
 
-//Escribe tu código aquí
-
-
-
-
-// Ejercicio 10: Crea otra variable que compare las dos primeras variables creadas en el ejercicio anterior, para que el resultado impreso en la consola sea true.
-
-//Escribe tu código aquí
+let a = 1;
+let b = 2;
+let comparison = a == b;
+console.log(comparison);
 
 
+// Ejercicio 10: Crea otra variable que compare las dos primeras variables creadas en el ejercicio 
+// anterior, para que el resultado impreso en la consola sea true.
+
+let comparison2 = a < b;
+console.log(comparison2);
 
 
 //Ejercicio 11: completa el ejercicio
-/*
+
 let num1 = 15
 let num2 = 20
 
-let comparacion = //Realiza la operación de comparación que consideres para que el resultado en consola sea true
-console.log(comparacion)
-*/
+let comparacion = num1 < num2; 
+
+//Realiza la operación de comparación que consideres para que el resultado en 
+// consola sea true
+console.log(comparacion);
+
 
 //Ejercicio 12: completa el ejercicio
-/*
 let num3 = 1
 let num3AsString = "1"
 
-let result = //Realiza la operación de comparación que consideres entre las dos variables dadas, para que el resultado en consola sea false sin usar el comparador de desigualdad
-console.log(result) 
-*/
+let result = num3 === num3AsString;
+
+//Realiza la operación de comparación que consideres entre las dos variables dadas, 
+// para que el resultado en consola sea false sin usar el comparador de desigualdad
+console.log(result);
+
 
 //Ejercicio 13: completa el ejercicio
-/*
-let result2 = //Realiza la operación de comparación que consideres con las dos variables del ejercicio anterior para que el resultado en consola sea true.
+
+let result2 = num3 == num3AsString;
+
+//Realiza la operación de comparación que consideres con las dos variables del ejercicio 
+// anterior para que el resultado en consola sea true.
 console.log(result2)
-*/
 
 
 //OPERADORES DE CADENAS
-//Ejercicio 14: Crea una variable con tu nombre y otra variable con tu apellido y crea otra nueva variable con tu nombre completo concatenando las dos variables anteriores e imprime en consola. Debe haber un espacio entre tu nombre y apellido.
+//Ejercicio 14: Crea una variable con tu nombre y otra variable con tu apellido y crea otra 
+// nueva variable con tu nombre completo concatenando las dos variables anteriores e imprime
+//  en consola. Debe haber un espacio entre tu nombre y apellido.
 
 //Escribe tu código aquí
 
-
-
-
+const nombre = "Mayleris";
+const apellido = "Echezuria";
+const nombreCompleto = nombre + " " + apellido;
+console.log(nombreCompleto);
 
 //OPERADORES DE LÓGICA
-//Ejercicio 15: Descomenta todo el bloque desde la variable 'a' hasta el 'console.log(res6)' y completa el ejercicio. (Saldrá un error y no podrás visualizar el resultado hasta que termines este ejercicio)
+//Ejercicio 15: Descomenta todo el bloque desde la variable 'a' hasta el 'console.log(res6)' 
+// y completa el ejercicio. (Saldrá un error y no podrás visualizar el resultado hasta que termines 
+// este ejercicio)
 
 /* let a = 6;
 let b = 3;
